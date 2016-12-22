@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>One MCL</title>
+    
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/bodyStyle.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 1300px)">
+    
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript">  
+        function profileDropdown() {
+            document.getElementById("myDropdown-one").classList.toggle("show-one");                 
+        }
+        
+        window.onclick = function(event) {  
+            if (!event.target.matches('.dropbtn-one')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content-one");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-one')) {
+                        openDropdown.classList.remove('show-one');
+                    }
+                }
+            }
+        }  
+        
+        function enrollmentDropdown() {
+            document.getElementById("myDropdown-two").classList.toggle("show-two");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn-two')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content-two");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-two')) {
+                        openDropdown.classList.remove('show-two');
+                    }
+                }
+            }
+        }  
+        
+        function paymentDropdown() {
+            document.getElementById("myDropdown-three").classList.toggle("show-three");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn-three')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content-three");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-three')) {
+                        openDropdown.classList.remove('show-three');
+                    }
+                }
+            }
+        }  
+        
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show-myGrades");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn-myGrades')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content-myGrades");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show-myGrades')) {
+                openDropdown.classList.remove('show-myGrades');
+              }
+            }
+          }
+        }
+        
+    </script>
+    <!-- END JAVASCRIPT -->
+</head>
+
+<body>
+    <header>
+        <ul>
+            <img class="mcl-logo" src="images/MCL LOGO.png" />
+            <li class="wrapper"><a href="1%20my_home.html">My Home</a>
+                
+                <li class="wrapper dropdown-one">
+                <a onclick="profileDropdown()" class="dropbtn-one">My Profile</a>
+                    <div id="myDropdown-one" class="dropdown-content-one">
+                        <a class="dropdown-one-a" href="2.1%20my_grades.html">My Grades</a>
+                        <a class="dropdown-one-b" href="2.2%20my_schedule.html">My Schedules</a>
+                        <a class="dropdown-one-c" href="2.3%20my_curriculum.html">My Curriculum</a>
+                    </div>
+                </li>
+            
+                <li class="wrapper dropdown-two">
+                <a onclick="enrollmentDropdown()" class="dropbtn-two">Enrollment</a>
+                    <div id="myDropdown-two" class="dropdown-content-two">
+                        <a href="3.1%20manage_course.html">Manage Courses</a>
+                        <a href="3.3%20finalization.html">Finalization</a>
+                    </div>
+                <li class="wrapper dropdown-three">
+                <a class="dropbtn-three">Bills and Payment</a>
+                    <div id="myDropdown-three" class="dropdown-content-three">
+                        <a onclick="#">Unsetteled Charges</a>
+                        <a onclick="#">Payment History</a>
+                    </div>
+                
+                <li class="wrapper">
+                <a onclick="#">Feedback</a>               
+                
+                <li class="wrapper">
+                <a href="index.html">Signout</a>
+            </ul>
+    </header>
+    
+    <div class="div-main-grade">
+        
+        <div class="div-two-grade">
+            <div class="dropdown-myGrades">
+                <button onclick="myFunction()" class="dropbtn-myGrades">MY GRADES</button>
+                <div id="myDropdown" class="dropdown-content-myGrades">
+                    <a href="2.1.1%201st%20term.html">1st Term / 2016-17</a>
+                    <a href="2.1.2%202nd%20term.html">2nd Term / 2016-17</a>
+                </div>
+            </div>
+            <table border="2" class="grade-table-one">
+                <tr>
+                    <th>Course</th>
+                    <th>Section</th>
+                    <th>Grade</th>
+                    <th>Units</th>
+                    <th>Remarks</th>
+                </tr>
+                <tr>
+                    <td class="td-grade">IT114P</td>
+                    <td class="td-grade">A05</td>
+                    <td class="td-grade">3.00</td>
+                    <td class="td-grade">3</td>
+                    <td class="td-grade remarks-pass">Pass</td>
+                </tr>
+                <tr>
+                    <td class="td-grade">CS106P</td>
+                    <td class="td-grade">A54</td>
+                    <td class="td-grade">5.00</td>
+                    <td class="td-grade">3</td>
+                    <td class="td-grade remarks-fail">Fail</td>
+                </tr>
+                <tr>
+                    <td class="td-grade">MATH014</td>
+                    <td class="td-grade">B76</td>
+                    <td class="td-grade">1.75</td>
+                    <td class="td-grade">2</td>
+                    <td class="td-grade remarks-pass">Pass</td>
+                </tr>
+                <tr>
+                    <td class="td-grade">IT112P</td>
+                    <td class="td-grade">A54</td>
+                    <td class="td-grade">1.50</td>
+                    <td class="td-grade">3</td>
+                    <td class="td-grade remarks-pass">Pass</td>
+                </tr>
+                
+            </table>
+            <br />
+            <table border="2" class="grade-table-two">
+                <tr>
+                    <th>Considered Units</th>
+                    <td class="td-grade">9</td>
+                    <th>Academic Status</th>
+                    <td class="td-grade">OK</td>
+                </tr>
+                <tr>
+                    <th>Quarterly Wtd Ave</th> 
+                    <td class="td-grade">4.099</td>
+                    <th>Readmission Status</th>
+                    <td class="td-grade">OK</td>                
+                </tr>
+            </table>
+            
+            <p id="p-one">
+            If there are any errors, please report directly to the<a href=""> OnEMCL Administrator</a>.
+            </p>
+        </div>
+        <div class="div-three">
+        
+        </div>   
+    </div>   
+    
+    <footer>
+        <div class="footer-wrapper">
+            <ul>
+                <li class="footer-list">Copyright © 2006-2014. All rights reserved. Malayan Colleges of Laguna </li> 
+                <li class="footer-list"><a class="footer-terms" href="#">Terms of Service</a> | <a class="footer-policy" href="#">Privacy Policy</a></li>
+                <li class="footer-list">one@mcl.edu.ph </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

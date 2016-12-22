@@ -1,0 +1,746 @@
+body {
+    background-color: #F5F5F5;
+    background-size: auto;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    margin: -17px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.div-main-home {
+    max-width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.div-one {
+    width: 92%;
+    height: 86px;
+    float: none; 
+    text-align: center;
+    background-color: #e6e6e6;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px 10px 10px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+.div-two-main {
+    max-width: 90%;
+    height: auto;
+    background-color: #e6e6e6;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding: 10px 20px 20px 20px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+.div-two-container {
+    margin: 30px 20px 50px 20px;
+}
+
+.left-menu { 
+    font-size: 20px;
+    display: inline-block;
+    padding: 0;
+}
+.left-menu a {
+    color: #000000;
+    display: inline-block; 
+    padding: 37px 20px 37px 20px;
+}
+.left-menu a:hover {
+    cursor: pointer;
+    color: #e6e6e6;
+    background-color: #000080;
+    padding: 37px 20px 37px 20px;
+    opacity: 0.9;
+}
+
+/* ======================TABLES========================== */
+
+td, th {
+    border: 1px solid #cccccc;
+    text-align: center;
+    padding: 8px;
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background-color: #b3b3b3;
+}
+
+/* ========================TABLES============================ */
+
+.remarks-pass {
+    color: green;
+}
+
+.remarks-fail {
+    color: red;
+}
+
+.p-one {
+    color: blue;
+    font-size: 16px;
+}
+
+.p-two {
+    font-size: 14px;
+}
+
+/* ========================================================== */
+/* ========================== GRADES ======================== */
+/* ========================================================== */
+
+.div-main-grade {
+    max-width: 1100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+div.div-two-grade {
+    max-width: 92%;
+    height: auto;
+    background-color: #e6e6e6;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px 20px 20px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+} 
+
+.dropbtn-one {
+    padding: 0  0 0;
+}
+
+/* ==================MY GRADES DROPDOWN===================== */
+.dropbtn-myGrades {
+    margin-top: 20px;
+    background-color: #000080;
+    color: #e6e6e6;
+    padding: 20px 90px 20px 90px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn-myGrades:hover, .dropbtn-myGrades:focus {
+    background-color: #0000b3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown-myGrades {
+    display: inline-block;
+}
+
+.dropdown-content-myGrades {
+    font-size: 18px;
+    display: none;
+    padding: 20px 0 20px 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content-myGrades a {
+    color: black;
+    padding: 10px 66px 10px 66px;   
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-myGrades a:hover {
+    padding: 20px 66px 20px 66px;
+    color: #e6e6e6;
+    background-color: #000080;
+    opacity: 0.9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+.show-myGrades {
+    display:block;
+}
+
+/* =========================TABLES=========================   */
+
+.grade-table-one {
+    height: 10%;
+    width: 100%; 
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.3);
+}
+
+.grade-table-two {
+    height: 10%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.3);
+}
+
+.td-grade {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+.td-sched {
+    color: green;
+}
+
+/* ========================================================== */
+/* ========================= SCHEDULE ======================= */
+/* ========================================================== */
+
+.div-main-sched {
+    max-width: 1100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+div.div-two-schedule {
+    width: 90%;
+    height: auto;
+    background-color: #e6e6e6;
+    margin: 20px auto 50px auto;
+    text-align: center;
+    padding: 10px 30px 20px 30px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+} 
+
+/* ======================================================= */
+.dropbtn-sched {
+    margin-top: 20px;
+    background-color: #000080;
+    color: white;
+    padding: 20px 70px 20px 70px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn-sched:hover, .dropbtn-sched:focus {
+    background-color: #0000b3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown-sched {
+    display: inline-block;
+}
+
+.dropdown-content-sched {
+    font-size: 18px;
+    display: none;
+    padding: 20px 0 20px 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content-sched a {
+    color: black;
+    padding: 10px 57px 10px 57px;   
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-sched a:hover {
+    padding: 20px 57px 20px 57px;
+    color: #e6e6e6;
+    background-color: #000080;
+    opacity: 0.9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+.show-sched {
+    display:block;
+}
+
+/* =====================TABLE ONE======================== */
+.table-one {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.3);
+}
+
+.tr-sched, td-sched {
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+}
+
+.td-sched {
+    background-color: #000080;
+    color: #e6e6e6;
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.5);
+}
+
+th {
+    text-align: center;
+}
+
+/* ========================================================== */
+/* ======================== CURRICULUM ====================== */
+/* ========================================================== */
+
+.div-main-curriculum {
+    max-width: 1100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+div.div-two-curriculum {
+    max-width: 90%;
+    height: auto;
+    background-color: #e6e6e6;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 30px 30px 30px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+} 
+
+/* ==========================================================*/
+/* DROP DOWN CURRICULUM */
+
+.dropbtn-curriculum {
+    margin-top: 20px;
+    background-color: #000080;
+    color: white;
+    padding: 20px 70px 20px 70px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn-curriculum:hover, .dropbtn-curriculum:focus {
+    background-color: #0000b3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown-curriculum {
+    display: inline-block;
+}
+
+.dropdown-content-curriculum {
+    font-size: 18px;
+    display: none;
+    padding: 20px 0 20px 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+.dropdown-content-curriculum a {
+    color: black;
+    padding: 10px 90px 10px 90px;   
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-curriculum a:hover {
+    padding: 20px 90px 20px 90px;
+    color: #e6e6e6;
+    background-color: #000080;
+    opacity: 0.9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+.show-curriculum {
+    display:block;
+}
+
+/* =========================LEGENDS============================ */
+
+.legend {
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    background-color: #b3b3b3;
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.3);
+}
+
+#taken {
+    color: blue;
+}
+
+#current-load {
+    color: green;
+}
+
+#not-yet-taken {
+    color: black;
+}
+
+#incomplete {
+    color: red;
+}
+
+#credited {
+    color: chocolate;
+}
+
+/* YEAR HEADER */
+.year-header {
+    background-color: #000080;
+    color: #e6e6e6;
+    height: 10%;
+    font-size: 25px;
+    padding: 10px 0 10px 0;
+    margin-top: 30px;
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.5);
+}
+
+/* =========================TABLE============================= */
+
+.table-one {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.3);
+}
+
+.table-three {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.3);
+}
+
+.td-all-curriculum {
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    padding: 8px 0px 8px 0px;
+}
+
+.curriculum-title {
+    width: 500px;
+}
+
+/* ========================================================== */
+/* ======================== ENROLLMENT ====================== */
+/* ========================================================== */
+
+.div-main-enrollment {
+    max-width: 1100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.div-courses-container {
+    max-width: 90%;
+    height: auto;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    background-color: #e6e6e6;
+    padding: 10px 30px 30px 30px;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.3);
+}
+
+.div-enlisted-courses-container {
+    text-align: center;
+    max-width: 90%;
+    height: 480px;
+    float: none;
+    margin: 30px auto 50px auto;
+    background-color: #e6e6e6;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.3);
+}
+
+
+/* ==================COURSES CONTAINERS====================== */
+
+.first-second-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 450px;
+}
+
+.div-first-year {
+    margin-top: 20px;
+    border-style: solid;
+    padding-bottom: 20px;
+    width: 48%;
+    height: auto;
+    float: left;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.3);
+}
+
+.div-second-year {
+    margin-top: 20px;
+    border-style: solid;
+    padding-bottom: 20px;
+    float: right;
+    width: 48%;
+    height: auto;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.3);
+}
+
+.third-fourth-container {
+    margin-top: 0px;
+    width: 100%;
+    height: 400px;
+}
+
+.div-third-year {
+    margin-top: 20px;
+    border-style: solid;
+    padding-bottom: 20px;
+    float: left;
+    width: 48%;
+    height: auto;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.3);
+}
+
+.div-fourth-year {
+    margin-top: 20px;
+    border-style: solid;
+    padding-bottom: 20px;
+    float: right;
+    width: 48%;
+    height: auto;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.3);
+}
+
+/*======================================================*/
+
+.enroll-first-header, .enroll-second-header, .enroll-third-header, .enroll-fourth-header{
+    background-color: #000080;
+    color: #e6e6e6;
+    padding: 10px 0 10px 0;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* ================ CHECKBOXES ===================*/
+
+.chk-main {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin-left: 15px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.label-main {
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 0px 10px;
+    font-size: 14px;
+    display: inline-block; 
+}
+
+.label-main:hover {
+    color: #e6e6e6;
+    background-color: #0000b3;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+#enlist-btn-container {
+    margin-top: 0;
+    text-align: center;
+}
+
+.enlist-btn {
+    cursor: pointer;
+    background-color: #000080;
+    color: #e6e6e6;
+    padding: 20px 70px 20px 70px;
+    font-size: 18px;
+    border: none;
+}
+
+.enlist-btn:hover {
+    background-color: #0000b3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+/* ====================DIV THREE======================== */
+
+.enlisted-courses-list {
+    margin-top: 20px;
+    height: auto;
+    border-style: solid;
+    padding-bottom: 20px;
+    float: left;
+    width: 48%;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.3);
+}
+
+.section-container {
+    margin-top: 20px;
+    height: auto;
+    border-style: solid;
+    padding-bottom: 20px;
+    float: right;
+    width: 48%; 
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.3);
+}
+
+.div-enlisted-header, .div-section-header {
+    background-color: #000080;
+    color: #e6e6e6;
+    padding: 10px 0 10px 0;
+    font-size: 18px;
+    border: none;
+}
+
+.enlisted-courses-container {
+    height: 250px;
+    margin: 20px auto 30px auto;
+    text-align: justify;
+}
+
+.chk-main-enlisted, .chk-main-section {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-left: 15px;
+    display: none;
+}
+
+.label-main-enlisted, .label-main-section {
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 10px 0 10px;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 5px;
+    vertical-align: middle;
+    display: none; 
+}
+
+.label-main-enlisted:hover, .label-main-section:hover {
+    color: #e6e6e6;
+    background-color: #0000b3;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+.remove-btn-container {
+    height: 80px;
+    width: 48%;
+    margin-top: 20px;;
+    float: left;
+}
+
+.section-btn-container {
+    height: 80px;
+    width: 48%;
+    margin-top: 20px;
+    float: right;
+}
+
+.remove-course-btn {
+    float: none;
+    margin-top: 10px;
+    background-color: #000080;
+    color: #e6e6e6;
+    padding: 20px 70px 20px 70px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-course-btn:hover, .select-section-btn:hover {
+    background-color: #0000b3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+.select-section-btn {
+    float: right;
+    margin-top: 10px;
+    background-color: #000080;
+    color: #e6e6e6;
+    padding: 20px 70px 20px 70px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ========================================================== */
+/* ========================== FOOTER ======================== */
+/* ========================================================== */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #000080;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+.footer-wrapper {
+    color: #F5F5F5;
+    padding: 10px 0 0 0;
+}
+
+.footer-terms, .footer-policy {
+    color: #F5F5F5;
+}
+
+.footer-terms:hover, .footer-policy:hover {
+    color: #000080;
+    background-color: #F5F5F5;
+}
+
+.footer-list {
+    display: block;
+    margin: 0 auto;
+}
+

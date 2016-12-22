@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>One MCL</title>
+    
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/bodyStyle.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 1100px)">
+    
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript">  
+        function profileDropdown() {
+            document.getElementById("myDropdown-one").classList.toggle("show-one");                 
+        }
+        
+        window.onclick = function(event) {  
+            if (!event.target.matches('.dropbtn-one')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content-one");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-one')) {
+                        openDropdown.classList.remove('show-one');
+                    }
+                }
+            }
+        }  
+        
+        function enrollmentDropdown() {
+            document.getElementById("myDropdown-two").classList.toggle("show-two");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn-two')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content-two");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-two')) {
+                        openDropdown.classList.remove('show-two');
+                    }
+                }
+            }
+        }  
+        
+        function paymentDropdown() {
+            document.getElementById("myDropdown-three").classList.toggle("show-three");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn-three')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content-three");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-three')) {
+                        openDropdown.classList.remove('show-three');
+                    }
+                }
+            }
+        }  
+        
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show-sched");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn-sched')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content-sched");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show-sched')) {
+                openDropdown.classList.remove('show-sched');
+              }
+            }
+          }
+        }
+        
+    </script>
+    <!-- END JAVASCRIPT -->
+</head>
+
+<body>
+    <header>
+        <ul>
+            <img class="mcl-logo" src="images/MCL LOGO.png" />
+            <li class="wrapper"><a href="1%20my_home.html">My Home</a>
+                
+                <li class="wrapper dropdown-one">
+                <a onclick="profileDropdown()" class="dropbtn-one">My Profile</a>
+                    <div id="myDropdown-one" class="dropdown-content-one">
+                        <a class="dropdown-one-a" href="2.1%20my_grades.html">My Grades</a>
+                        <a class="dropdown-one-b" href="2.2%20my_schedule.html">My Schedules</a>
+                        <a class="dropdown-one-c" href="2.3%20my_curriculum.html">My Curriculum</a>
+                    </div>
+                </li>
+            
+                <li class="wrapper dropdown-two">
+                <a onclick="enrollmentDropdown()" class="dropbtn-two">Enrollment</a>
+                    <div id="myDropdown-two" class="dropdown-content-two">
+                        <a href="3.1%20manage_course.html">Manage Courses</a>
+                        <a href="3.3%20finalization.html">Finalization</a>
+                    </div>
+                <li class="wrapper dropdown-three">
+                <a class="dropbtn-three">Bills and Payment</a>
+                    <div id="myDropdown-three" class="dropdown-content-three">
+                        <a onclick="#">Unsetteled Charges</a>
+                        <a onclick="#">Payment History</a>
+                    </div>
+                
+                <li class="wrapper">
+                <a onclick="#">Feedback</a>               
+                
+                <li class="wrapper">
+                <a href="index.html">Signout</a>
+            </ul>
+    </header>
+    
+    <div class="div-main-sched">
+        
+        <div class="div-two-schedule">
+            <div class="dropdown-sched">
+                <button onclick="myFunction()" class="dropbtn-sched">MY SCHEDULE</button>
+                <div id="myDropdown" class="dropdown-content-sched">
+                    <a href="2.2.1%201st%20term.html">1st Term / 2016-17</a>
+                    <a href="2.2.2%202nd%20term.html">2nd Term / 2016-17</a>
+                </div>
+            </div>
+            
+            <table border="2" class="table-one schedule-table">
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+                <tr>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                </tr>
+                <tr>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                </tr>
+                <tr>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                </tr>
+                <tr>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                </tr>
+                <tr>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                </tr>
+                <tr>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                </tr>
+                <tr>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                    <td class="td-grade">#</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="div-three">
+        
+        </div>   
+    </div>  
+
+    <footer>
+        <div class="footer-wrapper">
+            <ul>
+                <li class="footer-list">Copyright © 2006-2014. All rights reserved. Malayan Colleges of Laguna </li> 
+                <li class="footer-list"><a class="footer-terms" href="#">Terms of Service</a> | <a class="footer-policy" href="#">Privacy Policy</a></li>
+                <li class="footer-list">one@mcl.edu.ph </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

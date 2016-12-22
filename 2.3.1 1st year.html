@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>One MCL</title>
+    
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/bodyStyle.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 1300px)">
+    
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript">  
+        function profileDropdown() {
+            document.getElementById("myDropdown-one").classList.toggle("show-one");                 
+        }
+        
+        window.onclick = function(event) {  
+            if (!event.target.matches('.dropbtn-one')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content-one");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-one')) {
+                        openDropdown.classList.remove('show-one');
+                    }
+                }
+            }
+        }  
+        
+        function enrollmentDropdown() {
+            document.getElementById("myDropdown-two").classList.toggle("show-two");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn-two')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content-two");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-two')) {
+                        openDropdown.classList.remove('show-two');
+                    }
+                }
+            }
+        }  
+        
+        function paymentDropdown() {
+            document.getElementById("myDropdown-three").classList.toggle("show-three");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn-three')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content-three");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-three')) {
+                        openDropdown.classList.remove('show-three');
+                    }
+                }
+            }
+        }  
+        
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show-curriculum");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn-curriculum')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content-curriculum");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show-curriculum')) {
+                openDropdown.classList.remove('show-curriculum');
+              }
+            }
+          }
+        }
+        
+    </script>
+    <!-- END JAVASCRIPT -->
+</head>
+
+<body>
+    <header>
+        <ul>
+            <img class="mcl-logo" src="images/MCL LOGO.png" />
+            <li class="wrapper"><a href="1%20my_home.html">My Home</a>
+                
+                <li class="wrapper dropdown-one">
+                <a onclick="profileDropdown()" class="dropbtn-one">My Profile</a>
+                    <div id="myDropdown-one" class="dropdown-content-one">
+                        <a class="dropdown-one-a" href="2.1%20my_grades.html">My Grades</a>
+                        <a class="dropdown-one-b" href="2.2%20my_schedule.html">My Schedules</a>
+                        <a class="dropdown-one-c" href="2.3%20my_curriculum.html">My Curriculum</a>
+                    </div>
+                </li>
+            
+                <li class="wrapper dropdown-two">
+                <a onclick="enrollmentDropdown()" class="dropbtn-two">Enrollment</a>
+                    <div id="myDropdown-two" class="dropdown-content-two">
+                        <a href="3.1%20manage_course.html">Manage Courses</a>
+                        <a href="3.3%20finalization.html">Finalization</a>
+                    </div>
+                <li class="wrapper dropdown-three">
+                <a class="dropbtn-three">Bills and Payment</a>
+                    <div id="myDropdown-three" class="dropdown-content-three">
+                        <a onclick="#">Unsetteled Charges</a>
+                        <a onclick="#">Payment History</a>
+                    </div>
+                
+                <li class="wrapper">
+                <a onclick="#">Feedback</a>               
+                
+                <li class="wrapper">
+                <a href="index.html">Signout</a>
+            </ul>
+    </header>
+    
+    <div class="div-main-curriculum">
+        
+        <div class="div-two-curriculum">
+            <div class="dropdown-curriculum">
+                <button onclick="myFunction()" class="dropbtn-curriculum">MY CURRICULUM</button>
+                <div id="myDropdown" class="dropdown-content-curriculum">
+                    <a href="2.3.1%201st%20year.html">1st Year</a>
+                    <a href="2.3.2%202nd%20year.html">2nd Year</a>
+                    <a href="2.3.3%203rd%20year.html">3rd Year</a>
+                    <a href="2.3.4%204th%20year.html">4th Year</a>
+                    <a href="2.3.5%205th%20year.html">5th Year</a>
+                    <a href="2.3.6%20specialization.html">Specialization</a>
+                    <a href="2.3.7%20electives.html">Electives</a>
+                </div>
+            </div> 
+            
+            <div>
+                <ul>
+                    <li id="taken" class="legend">Taken / Passed</li>
+                    <li id="current-load" class="legend">Current Load</li>
+                    <li id="not-yet-taken" class="legend">Not Yet Taken / Failed</li>
+                    <li id="incomplete" class="legend">Incomplete</li>
+                    <li id="credited" class="legend">Exempted / Credited</li>
+                </ul>
+            </div>
+            
+            <div class="year-header">1st Year</div>
+            
+            <table border="2" class="table-three">
+                <tr class="tr-curriculum">
+                    <th>Yr</th>
+                    <th>Term</th>
+                    <th>Course Code</th>
+                    <th>Course Title</th>
+                    <th>Lec Hrs</th>
+                    <th>Lab Hrs</th>
+                    <th>Credit Units</th>
+                    <th>Pre-Req</th>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">1st</td>
+                    <td class="td-all-curriculum">BIO011</td>
+                    <td id="taken" class="td-all-curriculum curriculum-title">GENERAL BIOLOGY</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">1st</td>
+                    <td class="td-all-curriculum">CWTS011</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">OVERVIEW OF THE NATIONAL SERVICE TRAINING PROGRAM</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum">(2)</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">1st</td>
+                    <td class="td-all-curriculum">ENG021</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">ENGLISH FOR ACADEMIC STUDIES 1</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">1st</td>
+                    <td class="td-all-curriculum">IT010</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">I.T. FUNDAMENTALS</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">2</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">1st</td>
+                    <td class="td-all-curriculum">IT010L</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">I.T. FUNDAMENTALS (LAB)</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">1st</td>
+                    <td class="td-all-curriculum">MATH005</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">FUNDAMENTALS OF ALGEBRA</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">1st</td>
+                    <td class="td-all-curriculum">PE021</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">PHYSICAL EDUCATION 1: PHYSICAL FITNESS AND GYMNASTICS</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">2.5</td>
+                    <td class="td-all-curriculum">(1.5)</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">1st</td>
+                    <td class="td-all-curriculum">SS016</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">PHILIPPINE HISTORY</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum">1st</td>
+                    <td class="td-all-curriculum">SS012</td>
+                    <td id="taken" class="td-all-curriculum curriculum-title">VALUES EDUCATION 1</td>
+                    <td class="td-all-curriculum">1.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">(1)</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="td-all-curriculum"><b>TOTAL</b></td>
+                    <td class="td-all-curriculum"><b>18</b></td>
+                    <td class="td-all-curriculum"><b>13.5</b></td>
+                    <td class="td-all-curriculum"><b>15</b></td>
+                    <td></td>
+                </tr>
+            </table>
+            
+            <table border="2" class="table-three">
+                <tr class="tr-curriculum">
+                    <th>Yr</th>
+                    <th>Term</th>
+                    <th>Course Code</th>
+                    <th>Course Title</th>
+                    <th>Lec Hrs</th>
+                    <th>Lab Hrs</th>
+                    <th>Credit Units</th>
+                    <th>Pre-Req</th>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">2nd</td>
+                    <td class="td-all-curriculum">CS100</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">INTRODUCTION TO COMPUTER SYSTEMS</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">2nd</td>
+                    <td class="td-all-curriculum">CWTS012</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">CIVIC WELFARE TRAINING COURSE - 1</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum">(2)</td>
+                    <td class="td-all-curriculum">CWTS011</td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">2nd</td>
+                    <td class="td-all-curriculum">ENG022</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">ENGLISH FOR ACADEMIC STUDIES 2</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum">ENG021</td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">2nd</td>
+                    <td class="td-all-curriculum">FIL001</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">KOMUNIKASYON SA AKADEMIKONG FILIPINO</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">2nd</td>
+                    <td class="td-all-curriculum">FIL001</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">ALGORITHMS AND PROBLEM SOLVING</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">2nd</td>
+                    <td class="td-all-curriculum">FIL001</td>
+                    <td id="taken" class="td-all-curriculum curriculum-title">FUNDAMENTALS OF PLANE AND SPHERICAL TRIGONOMETRY</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum">MATH005</td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">2nd</td>
+                    <td class="td-all-curriculum">FIL001</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">PHYSICAL EDUCATION 2: DANCE AND MARTIAL ARTS</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">2.5</td>
+                    <td class="td-all-curriculum">(1.5)</td>
+                    <td class="td-all-curriculum">IT100</td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="td-all-curriculum"><b>TOTAL</b></td>
+                    <td class="td-all-curriculum"><b>22.5</b></td>
+                    <td class="td-all-curriculum"><b>5.5</b></td>
+                    <td class="td-all-curriculum"><b>15</b></td>
+                    <td></td>
+                </tr>
+            </table>
+            
+            <table border="2" class="table-three">
+                <tr class="tr-curriculum">
+                    <th>Yr</th>
+                    <th>Term</th>
+                    <th>Course Code</th>
+                    <th>Course Title</th>
+                    <th>Lec Hrs</th>
+                    <th>Lab Hrs</th>
+                    <th>Credit Units</th>
+                    <th>Pre-Req</th>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">3rd</td>
+                    <td class="td-all-curriculum">CWTS013</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">CIVIC WELFARE TRAINING COURSE - 2</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum">(2)</td>
+                    <td class="td-all-curriculum">CWTS012</td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">3rd</td>
+                    <td class="td-all-curriculum">ENG023</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">ENGLISH FOR ACADEMIC STUDIES 3</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum">ENG022</td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">3rd</td>
+                    <td class="td-all-curriculum">FIL002</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">PAGBASA AT PAGSULAT TUNGO SA PANANALIKSIK</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum">FIL001</td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">3rd</td>
+                    <td class="td-all-curriculum">IT110P</td>
+                    <td id="taken" class="td-all-curriculum curriculum-title">COMPUTER PROGRAMMING CONCEPTS (PAIRED)</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum">IT100</td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">3rd</td>
+                    <td class="td-all-curriculum">MATH007</td>
+                    <td id="taken" class="td-all-curriculum curriculum-title">FUNDAMENTALS OF ANALYTIC GEOMETRY</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum">MATH006</td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">3rd</td>
+                    <td class="td-all-curriculum">PE023</td>
+                    <td id="credited" class="td-all-curriculum curriculum-title">PHYSICAL EDUCATION 3: INDIVIDUAL/DUAL SPORTS</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">2.5</td>
+                    <td class="td-all-curriculum">(1.5)</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td class="td-all-curriculum">1</td>
+                    <td class="td-all-curriculum">3rd</td>
+                    <td class="td-all-curriculum">SS018</td>
+                    <td id="taken" class="td-all-curriculum curriculum-title">CIVILIZATION AND DEVELOPMENT IN ASIA</td>
+                    <td class="td-all-curriculum">4.5</td>
+                    <td class="td-all-curriculum">--</td>
+                    <td class="td-all-curriculum">3</td>
+                    <td class="td-all-curriculum"></td>
+                </tr>
+                <tr class="tr-curriculum">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="td-all-curriculum"><b>TOTAL</b></td>
+                    <td class="td-all-curriculum"><b>21</b></td>
+                    <td class="td-all-curriculum"><b>10</b></td>
+                    <td class="td-all-curriculum"><b>15</b></td>
+                    <td></td>
+                </tr>
+            </table>
+            
+        </div>
+         
+    </div>
+    
+    <div><br /><br /><br /><br /><br /><br /><br /><br /></div>
+    
+    <footer>
+        <div class="footer-wrapper">
+            <ul>
+                <li class="footer-list">Copyright © 2006-2014. All rights reserved. Malayan Colleges of Laguna </li> 
+                <li class="footer-list"><a class="footer-terms" href="#">Terms of Service</a> | <a class="footer-policy" href="#">Privacy Policy</a></li>
+                <li class="footer-list">one@mcl.edu.ph </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

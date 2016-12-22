@@ -1,0 +1,167 @@
+header {
+    max-width: auto;
+    height: 90px;
+    background-color: #000080;
+}
+
+.mcl-header {
+    color: #F5F5F5;
+    float: left;
+    display: inline-block;    
+    text-decoration: none;
+    margin: 30px 20px 20px 20px; 
+    font-size: 28px;
+}
+
+.wrapper {
+    float: left;
+    display: inline-block;    
+    text-decoration: none;
+    margin-top: 34px;
+    margin-bottom: 10px;  
+    font-size: 20px;
+}
+
+.wrapper a {
+    text-decoration: none;
+    margin: 0 0 0 0;
+    padding: 33px 20px 34px 20px;
+    color: #fff;
+}
+
+.wrapper a:hover {
+    cursor: pointer;
+    color: #000080;
+    background-color: #F5F5F5;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.5);
+}
+
+.dropdown-content-one, .dropdown-content-two, .dropdown-content-three {
+    padding-top: 10px;
+    margin-top: 32px;
+    display: none;
+    position: absolute;
+    background-color: #d9d9d9;
+    overflow: auto;
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.3);
+}
+
+.dropdown-content-one a, .dropdown-content-two a, .dropdown-content-three a {
+    color: #000000;
+    display: block;
+}
+
+.dropdown-content-one a:hover, .dropdown-content-two a:hover, .dropdown-content-three a:hover {
+    color: #e6e6e6;
+    background-color: #000080;
+}
+
+.show-one, .show-two, .show-three {
+    display:block;
+}
+
+/* ============================MCL LOGO========================= */
+.mcl-logo {
+    float:left;
+    width: 80px;
+    height: 65px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mcl-logo:hover {
+    cursor: pointer;
+}
+
+/* =========================LOGIN=============================*/
+.div-login-home {
+    width: 920px; 
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-container {
+    float:left;
+    width: 500px;
+    height: 550px;
+    background-color: #000080;
+    text-align: center;
+    border-radius: 3px;
+    margin: 100px auto 0 auto;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.5);
+}
+
+#img-mcl-login {
+    width: 500px;
+    height: 400px;
+}
+
+#img-mcl-label {
+    margin: 20px 0 20px 0;
+    color:#e6e6e6;
+    
+}
+
+#img-mcl-btn {
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
+}
+
+#img-mcl-btn:hover {
+    color: #fff;
+    background-color: #bfbfbf; 
+    border: none;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.5);
+}
+
+.right-container {
+    float: right;
+    width: 400px;
+    height: 100px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.right-container-two {
+    float: right;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    background-color: #d9d9d9;
+    border-radius: 3px;
+    margin: 85px auto 0 auto;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.5);
+}
+
+.right-container-two img {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 10px;
+}
+
+#username, #password {
+    width: 230px;
+    height: 30px;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #000080;
+    color: #e6e6e6;
+    padding: 20px 94px 20px 94px;
+    margin: 0 auto 0 auto 0;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0000b3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}

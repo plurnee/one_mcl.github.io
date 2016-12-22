@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>One MCL</title>
+    
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/bodyStyle.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 1300px)">
+    
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript">   
+        
+        function profileDropdown() {
+            document.getElementById("myDropdown-one").classList.toggle("show-one");                 
+        }
+        
+        window.onclick = function(event) {  
+            if (!event.target.matches('.dropbtn-one')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content-one");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-one')) {
+                        openDropdown.classList.remove('show-one');
+                    }
+                }
+            }
+        }  
+        
+        function enrollmentDropdown() {
+            document.getElementById("myDropdown-two").classList.toggle("show-two");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn-two')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content-two");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-two')) {
+                        openDropdown.classList.remove('show-two');
+                    }
+                }
+            }
+        }  
+        
+        function paymentDropdown() {
+            document.getElementById("myDropdown-three").classList.toggle("show-three");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn-three')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content-three");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-three')) {
+                        openDropdown.classList.remove('show-three');
+                    }
+                }
+            }
+        }  
+        
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show-enrollment");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn-enrollment')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content-enrollment");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show-enrollment')) {
+                openDropdown.classList.remove('show-enrollment');
+              }
+            }
+          }
+        }
+        
+        //================================================
+        //MANAGE COURSES
+        function enlist() {
+            var a = document.getElementById("chk1");
+            var b = document.getElementById("chk2");
+            var c = document.getElementById("chk3");
+            var d = document.getElementById("chk4");
+            var e = document.getElementById("chk5");
+            var f = document.getElementById("chk6");
+            var g = document.getElementById("chk7");
+            var h = document.getElementById("chk8");
+            var i = document.getElementById("chk9");
+            var j = document.getElementById("chk10");
+            var k = document.getElementById("chk11");
+            var l = document.getElementById("chk12");
+            var m = document.getElementById("chk13");
+            var n = document.getElementById("chk14");
+            var o = document.getElementById("chk15");
+            var p = document.getElementById("chk16");
+            var q = document.getElementById("chk17");
+            var r = document.getElementById("chk18");
+            var s = document.getElementById("chk19");
+            var t = document.getElementById("chk20");
+            var u = document.getElementById("chk21");
+            
+                
+            if(a.checked) {
+                alert("CS105P - INTRODUCTION TO RELATIONAL DATA BASE MANAGEMENT (PAIRED) - Enlisted.");
+
+                document.getElementById("enlisted-chk-a").style.display = 'inline-block';
+                document.getElementById("enlisted-label-a").style.display = 'inline-block';
+                         
+                a.checked = false;
+            }                  
+            else if(b.checked) {
+                alert("CWTS011 - OVERVIEW OF THE NATIONAL SERVICE TRAINING PROGRAM - Enlisted.");
+                
+                document.getElementById("enlisted-chk-b").style.display = 'inline-block';
+                document.getElementById("enlisted-label-b").style.display = 'inline-block';
+                
+                b.checked = false;
+            }
+            else if(c.checked) {
+                alert("ENG021 - ENGLISH FOR ACADEMIC STUDIES 1- Enlisted.");
+            
+                document.getElementById("enlisted-chk-c").style.display = 'inline-block';
+                document.getElementById("enlisted-label-c").style.display = 'inline-block';
+            
+                c.checked = false;
+            }
+            else if(d.checked) {
+                alert("IT010 - I.T. FUNDAMENTALS - Enlisted.");
+                
+                document.getElementById("enlisted-chk-d").style.display = 'inline-block';
+                document.getElementById("enlisted-label-d").style.display = 'inline-block';
+                
+                d.checked = false;
+            }
+            else if(e.checked) {
+                alert("IT010L - I.T. FUNDAMENTALS (LAB) - Enlisted.");
+                
+                document.getElementById("enlisted-chk-e").style.display = 'inline-block';
+                document.getElementById("enlisted-label-e").style.display = 'inline-block';
+                
+                e.checked = false;
+            }
+            else if(f.checked) {
+                alert("MATH005 - FUNDAMENTALS OF ALGEBRA - Enlisted.");
+                
+                document.getElementById("enlisted-chk-f").style.display = 'inline-block';
+                document.getElementById("enlisted-label-f").style.display = 'inline-block';
+                
+                f.checked = false;
+            }   
+            else if(g.checked) {
+                alert("CHM015 - GENERAL CHEMISTRY - Enlisted.");
+                    
+                document.getElementById("enlisted-chk-g").style.display = 'inline-block';
+                document.getElementById("enlisted-label-g").style.display = 'inline-block';
+                    
+                g.checked = false;
+            }
+            else if(h.checked) {
+                alert("MATH020 - BASIC CALCULUS - Enlisted.");
+                
+                document.getElementById("enlisted-chk-h").style.display = 'inline-block';
+                document.getElementById("enlisted-label-h").style.display = 'inline-block';
+                
+                h.checked = false;
+            }
+            else if(i.checked) {
+                alert("CHM015L - GENERAL CHEMISTRY (LAB) - Enlisted.");
+                
+                document.getElementById("enlisted-chk-i").style.display = 'inline-block';
+                document.getElementById("enlisted-label-i").style.display = 'inline-block';
+                
+                i.checked = false;
+  
+            }
+            else if(j.checked) {
+                alert("CS106P - DATA STRUCTURES AND ALGORITHM ANALYSIS (PAIRED) - Enlisted.");
+                
+                document.getElementById("enlisted-chk-j").style.display = 'inline-block';
+                document.getElementById("enlisted-label-j").style.display = 'inline-block';
+                
+                j.checked = false;
+            }
+            else if(k.checked) {
+                alert("MATH014 - SOLID MENSURATION - Enlisted.");
+                
+                document.getElementById("enlisted-chk-k").style.display = 'inline-block';
+                document.getElementById("enlisted-label-k").style.display = 'inline-block';
+                
+                k.checked = false;
+            }
+            else if(l.checked) {
+                alert("MATH140 - DISCRETE MATHEMATICS - Enlisted.");
+        
+                document.getElementById("enlisted-chk-l").style.display = 'inline-block';
+                document.getElementById("enlisted-label-l").style.display = 'inline-block';
+        
+                l.checked = false;
+            }
+            else if(m.checked) {
+                alert("T117P - JAVA PROGRAMMING (PAIRED) - Enlisted.");
+                
+                document.getElementById("enlisted-chk-m").style.display = 'inline-block';
+                document.getElementById("enlisted-label-m").style.display = 'inline-block';
+                
+                m.checked = false;
+            }
+            else if(n.checked) {
+                alert("CPE101-1P - DIGITAL DESIGN (PAIRED) - Enlisted.");
+                
+                document.getElementById("enlisted-chk-n").style.display = 'inline-block';
+                document.getElementById("enlisted-label-n").style.display = 'inline-block';
+                
+                n.checked = false;
+            }
+            else if(o.checked) {
+                alert("CS150P - SOFTWARE ENGINEERING (PAIRED) - Enlisted.");
+                
+                document.getElementById("enlisted-chk-o").style.display = 'inline-block';
+                document.getElementById("enlisted-label-o").style.display = 'inline-block';
+                
+                o.checked = false;
+            }
+            else if(p.checked) {
+                alert("MATH110 - PROBABILITY AND STATISTICS - Enlisted.");
+                
+                document.getElementById("enlisted-chk-p").style.display = 'inline-block';
+                document.getElementById("enlisted-label-p").style.display = 'inline-block';
+                
+                p.checked = false;
+            }
+            else if(q.checked) {
+                alert("VE013 - VALUES EDUCATION 3 - Enlisted.");
+                
+                document.getElementById("enlisted-chk-q").style.display = 'inline-block';
+                document.getElementById("enlisted-label-q").style.display = 'inline-block';
+                
+                q.checked = false;
+            }
+            else if(r.checked) {
+                alert("CS151 - OPERATING SYSTEMS - Enlisted.");
+                
+                document.getElementById("enlisted-chk-r").style.display = 'inline-block';
+                document.getElementById("enlisted-label-r").style.display = 'inline-block';
+                
+                r.checked = false;
+            }
+            else if(s.checked) {
+                alert("IT181 - ETHICS AND I.T. LAWS - Enlisted.");
+                
+                document.getElementById("enlisted-chk-s").style.display = 'inline-block';
+                document.getElementById("enlisted-label-s").style.display = 'inline-block';
+                
+                s.checked = false;
+            }      
+            else if(t.checked) {
+                alert("IT200D-1 - I.T PROJECTS 1 (CAPSTONE PROJECT) - Enlisted.");
+                
+                document.getElementById("enlisted-chk-t").style.display = 'inline-block';
+                document.getElementById("enlisted-label-t").style.display = 'inline-block';
+                
+                t.checked = false;
+            }
+            else if(u.checked) {
+                alert("IT199R-1 - I.T. PRACTICUM 1 - Enlisted.");
+                
+                document.getElementById("enlisted-chk-u").style.display = 'inline-block';
+                document.getElementById("enlisted-label-u").style.display = 'inline-block';
+                
+                u.checked = false;
+            }       
+            else {
+                alert("Please select atleast 1 course to enlist. Thank you.");
+            }
+        }         
+        
+        /* Remove course/s */
+        function removeCourse() {
+            var a = document.getElementById("enlisted-chk-a");
+            var b = document.getElementById("enlisted-chk-b");
+            var c = document.getElementById("enlisted-chk-c");
+            var d = document.getElementById("enlisted-chk-d");
+            var e = document.getElementById("enlisted-chk-e");
+            var f = document.getElementById("enlisted-chk-f");
+            var g = document.getElementById("enlisted-chk-g");
+            var h = document.getElementById("enlisted-chk-h");
+            var i = document.getElementById("enlisted-chk-i");
+            var j = document.getElementById("enlisted-chk-j");
+            var k = document.getElementById("enlisted-chk-k");
+            var l = document.getElementById("enlisted-chk-l");
+            var m = document.getElementById("enlisted-chk-m");
+            var n = document.getElementById("enlisted-chk-n");
+            var o = document.getElementById("enlisted-chk-o");
+            var p = document.getElementById("enlisted-chk-p");
+            var q = document.getElementById("enlisted-chk-q");
+            var r = document.getElementById("enlisted-chk-r");
+            var s = document.getElementById("enlisted-chk-s");
+            var t = document.getElementById("enlisted-chk-t");
+            var u = document.getElementById("enlisted-chk-u");
+            
+            if(a.checked) {
+                alert("CS105P - INTRODUCTION TO RELATIONAL DATA BASE MANAGEMENT (PAIRED) - Removed.");
+                
+                document.getElementById("enlisted-chk-a").style.display = 'none';
+                document.getElementById("enlisted-label-a").style.display = 'none';
+                
+                a.checked = false;
+            }
+            else if(b.checked) {
+                alert("CWTS011 - OVERVIEW OF THE NATIONAL SERVICE TRAINING PROGRAM - Removed.");
+                
+                document.getElementById("enlisted-chk-b").style.display = 'none';
+                document.getElementById("enlisted-label-b").style.display = 'none';
+                
+                b.checked = false;
+            }
+            else if(c.checked) {
+                alert("ENG021 - ENGLISH FOR ACADEMIC STUDIES 1 - Removed.");
+                
+                document.getElementById("enlisted-chk-c").style.display = 'none';
+                document.getElementById("enlisted-label-c").style.display = 'none';
+                
+                c.checked = false;
+            }
+            else if(d.checked) {
+                alert("IT010 - I.T. FUNDAMENTALS - Removed.");
+                
+                document.getElementById("enlisted-chk-d").style.display = 'none';
+                document.getElementById("enlisted-label-d").style.display = 'none';
+                
+                d.checked = false;
+            }
+            else if(e.checked) {
+                alert("IT010L - I.T. FUNDAMENTALS (LAB) - Removed.");
+                
+                document.getElementById("enlisted-chk-e").style.display = 'none';
+                document.getElementById("enlisted-label-e").style.display = 'none';
+                
+                e.checked = false;
+            }
+            else if(f.checked) {
+                alert("MATH005 - FUNDAMENTALS OF ALGEBRA - Removed.");
+                
+                document.getElementById("enlisted-chk-f").style.display = 'none';
+                document.getElementById("enlisted-label-f").style.display = 'none';
+                                
+                f.checked = false;
+            }
+            else if(g.checked) {
+                alert("CHM015 - GENERAL CHEMISTRY - Removed.");
+                
+                document.getElementById("enlisted-chk-g").style.display = 'none';
+                document.getElementById("enlisted-label-g").style.display = 'none';
+                                
+                g.checked = false;
+            }
+            else if(h.checked) {
+                alert("MATH020 - BASIC CALCULUS - Removed.");
+                
+                document.getElementById("enlisted-chk-h").style.display = 'none';
+                document.getElementById("enlisted-label-h").style.display = 'none';
+                                
+                h.checked = false;
+            }
+            else if(i.checked) {
+                alert("CHM015L - GENERAL CHEMISTRY (LAB) - Removed.");
+                
+                document.getElementById("enlisted-chk-i").style.display = 'none';
+                document.getElementById("enlisted-label-i").style.display = 'none';
+                                
+                i.checked = false;
+            }
+            else if(j.checked) {
+                alert("CS106P - DATA STRUCTURES AND ALGORITHM ANALYSIS (PAIRED) - Removed.");
+                
+                document.getElementById("enlisted-chk-j").style.display = 'none';
+                document.getElementById("enlisted-label-j").style.display = 'none';
+                                
+                j.checked = false;
+            }
+            else if(k.checked) {
+                alert("MATH014 - SOLID MENSURATION - Removed.");
+                
+                document.getElementById("enlisted-chk-k").style.display = 'inline-block';
+                document.getElementById("enlisted-label-k").style.display = 'none';
+                                
+                k.checked = false;
+            }
+            else if(l.checked) {
+                alert("MATH140 - DISCRETE MATHEMATICS - Removed.");
+                
+                document.getElementById("enlisted-chk-l").style.display = 'none';
+                document.getElementById("enlisted-label-l").style.display = 'none';
+                                
+                l.checked = false;
+            }
+            else if(m.checked) {
+                alert("IT117P - JAVA PROGRAMMING (PAIRED) - Removed.");
+                
+                document.getElementById("enlisted-chk-m").style.display = 'none';
+                document.getElementById("enlisted-label-m").style.display = 'none';
+                                
+                m.checked = false;
+            }
+            else if(n.checked) {
+                alert("CPE101-1P - DIGITAL DESIGN (PAIRED) - Removed.");
+                
+                document.getElementById("enlisted-chk-n").style.display = 'none';
+                document.getElementById("enlisted-label-n").style.display = 'none';
+                                
+                n.checked = false;
+            }
+            else if(o.checked) {
+                alert("CS150P - SOFTWARE ENGINEERING (PAIRED) - Removed.");
+                
+                document.getElementById("enlisted-chk-o").style.display = 'none';
+                document.getElementById("enlisted-label-o").style.display = 'none';
+                                
+                o.checked = false;
+            }
+            else if(p.checked) {
+                alert("MATH110 - PROBABILITY AND STATISTICS - Removed.");
+                
+                document.getElementById("enlisted-chk-p").style.display = 'none';
+                document.getElementById("enlisted-label-p").style.display = 'none';
+                                
+                p.checked = false;
+            }
+            else if(q.checked) {
+                alert("VE013 - VALUES EDUCATION 3 - Removed.");
+                
+                document.getElementById("enlisted-chk-q").style.display = 'none';
+                document.getElementById("enlisted-label-q").style.display = 'none';
+                                
+                q.checked = false;
+            }
+            else if(r.checked) {
+                alert("CS151 - OPERATING SYSTEMS - Removed.");
+                
+                document.getElementById("enlisted-chk-r").style.display = 'none';
+                document.getElementById("enlisted-label-r").style.display = 'none';
+                                
+                r.checked = false;
+            }
+            else if(s.checked) {
+                alert("IT181 - ETHICS AND I.T. LAWS - Removed.");
+                
+                document.getElementById("enlisted-chk-s").style.display = 'none';
+                document.getElementById("enlisted-label-s").style.display = 'none';
+                                
+                s.checked = false;
+            }
+            else if(t.checked) {
+                alert("IT200D-1 - I.T PROJECTS 1 (CAPSTONE PROJECT) - Removed.");
+                
+                document.getElementById("enlisted-chk-t").style.display = 'none';
+                document.getElementById("enlisted-label-t").style.display = 'none';
+                                
+                t.checked = false;
+            }
+            else if(u.checked) {
+                alert("IT199R-1 - I.T. PRACTICUM 1 - Removed.");
+                
+                document.getElementById("enlisted-chk-u").style.display = 'none';
+                document.getElementById("enlisted-label-u").style.display = 'none';
+                                
+                u.checked = false;
+            }
+            else {
+                alert("Please select atleast 1 course to remove. Thank you.");
+            }
+        }
+    
+        /* Sectioning */
+        function showSections() {
+            alert("No courses/sections available at this time.");
+        }
+        
+    </script>
+    <!-- END JAVASCRIPT -->
+</head>
+
+<body>
+    <header>
+        <ul>
+            <img class="mcl-logo" src="images/MCL LOGO.png" />
+            <li class="wrapper"><a href="1%20my_home.html">My Home</a>
+                
+                <li class="wrapper dropdown-one">
+                <a onclick="profileDropdown()" class="dropbtn-one">My Profile</a>
+                    <div id="myDropdown-one" class="dropdown-content-one">
+                        <a class="dropdown-one-a" href="2.1%20my_grades.html">My Grades</a>
+                        <a class="dropdown-one-b" href="2.2%20my_schedule.html">My Schedules</a>
+                        <a class="dropdown-one-c" href="2.3%20my_curriculum.html">My Curriculum</a>
+                    </div>
+                </li>
+            
+                <li class="wrapper dropdown-two">
+                <a onclick="enrollmentDropdown()" class="dropbtn-two">Enrollment</a>
+                    <div id="myDropdown-two" class="dropdown-content-two">
+                        <a href="3.1%20manage_course.html">Manage Courses</a>
+                        <a href="3.3%20finalization.html">Finalization</a>
+                    </div>
+                <li class="wrapper dropdown-three">
+                <a class="dropbtn-three">Bills and Payment</a>
+                    <div id="myDropdown-three" class="dropdown-content-three">
+                        <a onclick="#">Unsetteled Charges</a>
+                        <a onclick="#">Payment History</a>
+                    </div>
+                
+                <li class="wrapper">
+                <a onclick="#">Feedback</a>               
+                
+                <li class="wrapper">
+                <a href="index.html">Signout</a>
+            </ul>
+    </header>
+    
+    <div class="div-main-enrollment">
+        
+        <!-- =================2nd Div==================== -->
+        <div class="div-courses-container">   
+             
+            <div class="all-courses-container">
+                
+            <div class="first-second-container">
+                <div class="div-first-year">
+                    <div class="enroll-first-header">1st Year - Available Courses</div>
+    <!--
+                    <div>
+                        <input id="chk1" class="chk-main" type="checkbox"><label class="label-main" for="chk1">CS105P - INTRODUCTION TO RELATIONAL DATA BASE MANAGEMENT (PAIRED)</label>
+                    </div>
+                    <div >
+                        <input id="chk2" class="chk-main" type="checkbox"><label class="label-main" for="chk2">CWTS011 - OVERVIEW OF THE NATIONAL SERVICE TRAINING PROGRAM</label>
+                    </div>
+                    <div>
+                        <input id="chk3" class="chk-main" type="checkbox"><label class="label-main" for="chk3">ENG021 - ENGLISH FOR ACADEMIC STUDIES 1</label>       
+                    </div>
+                    <div>
+                        <input id="chk4" class="chk-main" type="checkbox"><label class="label-main" for="chk4">IT010 - I.T. FUNDAMENTALS</label>
+                    </div>
+                    <div>
+                        <input id="chk5" class="chk-main" type="checkbox"><label class="label-main" for="chk5">IT010L - I.T. FUNDAMENTALS (LAB)</label>
+                    </div>
+                    <div>
+                        <input id="chk6" class="chk-main" type="checkbox"><label id="course-label-e" class="label-main" for="chk6">MATH005 - FUNDAMENTALS OF ALGEBRA</label>
+                    </div>
+    -->
+                </div>         
+    
+                <div class="div-second-year">
+                    <div class="enroll-second-header">2nd Year - Available Courses</div>
+    <!--
+                    <div>
+                        <input id="chk7" class="chk-main" type="checkbox"><label class="label-main" for="chk7">CHM015 - GENERAL CHEMISTRY</label>
+                    </div>
+                    <div>
+                        <input id="chk8" class="chk-main" type="checkbox"><label class="label-main" for="chk8">MATH020 - BASIC CALCULUS</label>
+                    </div>
+                    <div>
+                        <input id="chk9" class="chk-main" type="checkbox"><label class="label-main" for="chk9">CHM015L - GENERAL CHEMISTRY (LAB)</label>       
+                    </div>
+                    <div>
+                        <input id="chk10" class="chk-main" type="checkbox"><label class="label-main" for="chk10">CS106P - DATA STRUCTURES AND ALGORITHM ANALYSIS (PAIRED)</label>
+                    </div>
+                    <div>
+                        <input id="chk11" class="chk-main" type="checkbox"><label class="label-main" for="chk11">MATH014 - SOLID MENSURATION</label>
+                    </div>
+                    <div>
+                        <input id="chk12" class="chk-main" type="checkbox"><label class="label-main" for="chk12">MATH140 - DISCRETE MATHEMATICS</label>
+                    </div>
+                </div>
+    -->
+            </div>
+<!-- ==============END FIRST-SECOND CONTAINER================ -->
+                
+<!-- ==============THIRD-FOURTH CONTAINER================ -->
+            
+            <div class="third-fourth-container">
+                <div class="div-third-year">
+                    <div class="enroll-third-header">3rd Year - Available Courses</div>
+    <!--
+                    <div>
+                        <input id="chk13" class="chk-main" type="checkbox"><label class="label-main" for="chk13">IT117P - JAVA PROGRAMMING (PAIRED)</label>
+                    </div>
+                    <div>
+                        <input id="chk14" class="chk-main" type="checkbox"><label class="label-main" for="chk14">CPE101-1P - DIGITAL DESIGN (PAIRED)</label>
+                    </div>
+                    <div>
+                        <input id="chk15" class="chk-main" type="checkbox"><label class="label-main" for="chk15">CS150P - SOFTWARE ENGINEERING (PAIRED)</label>       
+                    </div>
+                    <div>
+                        <input id="chk16" class="chk-main" type="checkbox"><label class="label-main" for="chk16">MATH110 - PROBABILITY AND STATISTICS</label>
+                    </div>
+                    <div>
+                        <input id="chk17" class="chk-main" type="checkbox"><label class="label-main" for="chk17">VE013 - VALUES EDUCATION 3</label>
+                    </div>
+                    <div>
+                        <input id="chk18" class="chk-main" type="checkbox"><label class="label-main" for="chk18">CS151 - OPERATING SYSTEMS</label>
+                    </div>
+    -->
+                </div>
+                
+                <div class="div-fourth-year">
+                    <div class="enroll-fourth-header">4th Year - Available Courses</div>
+    <!--
+                    <div>
+                        <input id="chk19" class="chk-main" type="checkbox"><label class="label-main" for="chk19">IT181 - ETHICS AND I.T. LAWS</label>
+                    </div>
+                    <div>
+                        <input id="chk20" class="chk-main" type="checkbox"><label class="label-main" for="chk20">IT200D-1 - I.T PROJECTS 1 (CAPSTONE PROJECT)</label>
+                    </div>
+                    <div>
+                        <input id="chk21" class="chk-main" type="checkbox"><label class="label-main" for="chk21">IT199R-1 - I.T. PRACTICUM 1</label>       
+                    </div>
+                </div>
+    -->
+            </div>
+<!-- ==============END THIRD-FOURTH CONTAINER================ -->
+        </div><!-- END ALL COURSES CONTAINER -->
+
+            
+            
+            <div id="enlist-btn-container">
+                <button class="enlist-btn" onclick="showSections()">ENLIST COURSES</button>
+            </div>
+        </div>  
+        
+        <!-- =================3rd Div==================== -->
+        <div class="div-enlisted-courses-container">
+            <div class="courses-section-container">
+                
+                <div class="enlisted-courses-list">
+                    <div class="div-enlisted-header">
+                    ENLISTED COURSES LIST
+                    </div>
+    
+                    <div class="enlisted-courses-container">
+                        <div>
+                            <input id="enlisted-chk-a" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-a" class="label-main-enlisted" for="enlisted-chk-a">CS105P - INTRODUCTION TO RELATIONAL DATA BASE MANAGEMENT (PAIRED)</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-b" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-b" class="label-main-enlisted" for="enlisted-chk-b">CWTS011 - OVERVIEW OF THE NATIONAL SERVICE TRAINING PROGRAM</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-c" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-c" class="label-main-enlisted" for="enlisted-chk-c">ENG021 - ENGLISH FOR ACADEMIC STUDIES 1</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-d" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-d" class="label-main-enlisted" for="enlisted-chk-d">IT010 - I.T. FUNDAMENTALS</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-e" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-e" class="label-main-enlisted" for="enlisted-chk-e">IT010L - I.T. FUNDAMENTALS (LAB)</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-f" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-f" class="label-main-enlisted" for="enlisted-chk-f">MATH005 - FUNDAMENTALS OF ALGEBRA</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-g" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-g" class="label-main-enlisted" for="enlisted-chk-g">CHM015 - GENERAL CHEMISTRY</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-h" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-h" class="label-main-enlisted" for="enlisted-chk-h">MATH020 - BASIC CALCULUS</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-i" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-i" class="label-main-enlisted" for="enlisted-chk-i">CHM015L - GENERAL CHEMISTRY (LAB)</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-j" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-j" class="label-main-enlisted" for="enlisted-chk-j">CS106P - DATA STRUCTURES AND ALGORITHM ANALYSIS (PAIRED)</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-k" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-k" class="label-main-enlisted" for="enlisted-chk-k">MATH014 - SOLID MENSURATION</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-l" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-l" class="label-main-enlisted" for="enlisted-chk-l">MATH140 - DISCRETE MATHEMATICS</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-m" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-m" class="label-main-enlisted" for="enlisted-chk-m">IT117P - JAVA PROGRAMMING (PAIRED)</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-n" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-n" class="label-main-enlisted" for="enlisted-chk-n">CPE101-1P - DIGITAL DESIGN (PAIRED)</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-o" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-o" class="label-main-enlisted" for="enlisted-chk-o">CS150P - SOFTWARE ENGINEERING (PAIRED)</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-p" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-p" class="label-main-enlisted" for="enlisted-chk-p">MATH110 - PROBABILITY AND STATISTICS</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-q" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-q" class="label-main-enlisted" for="enlisted-chk-q">VE013 - VALUES EDUCATION 3</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-r" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-r" class="label-main-enlisted" for="enlisted-chk-r">CS151 - OPERATING SYSTEMS</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-s" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-s" class="label-main-enlisted" for="enlisted-chk-s">IT181 - ETHICS AND I.T. LAWS</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-t" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-t" class="label-main-enlisted" for="enlisted-chk-t">IT200D-1 - I.T PROJECTS 1 (CAPSTONE PROJECT)</label>
+                        </div>
+                        <div>
+                            <input id="enlisted-chk-u" class="chk-main-enlisted" type="checkbox"><label id="enlisted-label-u" class="label-main-enlisted" for="enlisted-chk-u">IT199R-1 - I.T. PRACTICUM 1</label>
+                        </div>
+                    </div>  
+                    
+                
+                </div>
+                
+                <div class="section-container">
+                    <div class="div-section-header">
+                    AVAILABLE SECTIONS
+                    </div>
+                    <div class="enlisted-courses-container">
+                    </div>
+                </div>
+                
+        </div><!-- END ENLISTED COURSE CONTAINER AND SECTIONS CONTAINER -->
+            <div class="remove-btn-container">
+                <div>
+                    <button class="remove-course-btn" onclick="showSections()">REMOVE COURSE</button>
+                </div>
+            </div>
+            <div class="section-btn-container">
+                <div>
+                    <button class="remove-course-btn" onclick="showSections()">SHOW SECTIONS</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div><br /><br /><br /><br /><br /><br /><br /><br /></div>
+    
+    <footer>
+        <div class="footer-wrapper">
+            <ul>
+                <li class="footer-list">Copyright © 2006-2014. All rights reserved. Malayan Colleges of Laguna </li> 
+                <li class="footer-list"><a class="footer-terms" href="#">Terms of Service</a> | <a class="footer-policy" href="#">Privacy Policy</a></li>
+                <li class="footer-list">one@mcl.edu.ph </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
